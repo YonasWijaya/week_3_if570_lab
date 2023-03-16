@@ -50,3 +50,10 @@ class TowerTank (override var height: Int, var diameter: Int): Aquarium(height =
     override var water = volume *0.8
     override val shape = "cylinder"
 }
+
+class PrintingFishAction(val food: String) : FishAction {
+    override fun eat() {
+        println(food)
+    }
+}
+
